@@ -137,7 +137,7 @@ exercise4 hello.c
 nano exercise6
 
 #!/bin/bash
-first_line=$(head -9 "$1")
+first_line=$(head -1 "$1")
 if [[ "$1" == *.c || "$1" == *.js ]]; then
     if [[ "$first_line" == //* ]]; then
         echo "There is comment";
